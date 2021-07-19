@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Apartment Search | Contact</title>
+  </head>
+
+  <body>
+    <!-- Start of form -->
+    <div id="main">
+      <div id="main-title">
+        <h1 id="title">Tell us about yourself and what you're looking for</h1>
+        <p id="description">
+          Fill out our contact form and we'll be in touch as soon as possible.
+        </p>
+      </div>
+      <div>
+        <form id="survey-form">
+          <!-- Start of 1st line form -->
+          <div class="survey-div">
+            <label id="first-name-label" for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+              name="fire-name"
+              required
+            />
+
+            <label id="last-name-label" for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Last Name"
+              name="last-name"
+              required
+            />
+          </div>
+          <!-- End of 1st line form -->
+          <!-- Start of 2st line form -->
+          <div class="survey-div">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+
+            <label id="age-label" for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Age"
+              name="age"
+              min="18"
+              max="115"
+              required
+            />
+
+            <label id="phone-label">Phone</label>
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+          </div>
+          <!-- End of 2nd line form -->
+          <!-- Start of 3rd line form -->
+          <div class="survey-div">
+          <label>I'm interested in:</label>
+          <select  id="dropdown">
+            <option value="studio">Studio</option>
+            <option value="1-bedroom">1 Bedroom</option>
+            <option value="2-bedrooms">2 Bedrooms</option>
+            <option value="3-bedrooms">3 Bedrooms</option>
+          </select>
+          <label for="radiobox">Do you have a pet?</label>
+          <input type="radio" name="radiobox" value="yes" />Yes
+          <input type="radio" name="radiobox" value="no" />No
+        </div>
+          <!-- End of 3rd line form -->
+          <!-- Start of 4th line form -->
+          <div class="survey-div">
+          <label id="amenities">Amenities:</label>
+
+          <label for="washer-dryer">Washer/Dryer</label>
+          <input type="checkbox" value="washer-dryer" name="washer-dryer" />
+
+          <label for="parking">Parking</label>
+          <input type="checkbox" value="2" name="parking" />
+
+          <label for="balcony">Balcony</label>
+          <input type="checkbox" value="2" name="balcony" />
+
+          <label for="pool">Pool</label>
+          <input type="checkbox" value="2" name="pool" />
+
+          <label for="fitness-center">Fitness</label>
+          <input type="checkbox" value="2" name="fitness-center" />
+        </div>
+          <!-- End of 4th line form -->
+          <!-- Start of 5th line form -->
+          <div class="survey-div">
+          <textarea placeholder="Additional Comments..">
+Anything else you'd like to let us know?</textarea>
+        </div>
+           <!-- End of 5th line form -->
+           <!-- Start of 6th line form -->
+           <div class="survey-div">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+          <!-- End of 6th line form -->
+        </form>
+      </div>
+    </div>
+    <!-- End for form -->
+  </body>
+</html>
